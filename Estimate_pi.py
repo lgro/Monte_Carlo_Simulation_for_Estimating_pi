@@ -35,6 +35,7 @@ def plot_rain_drops(drops_in_circle, drops_out_of_circle, length_of_field=1, for
     plt.legend(loc="center")
     plt.title("%s drops: %s landed in circle, estimating $\pi$ as %.4f." % (number_of_drops, number_of_drops_in_circle, 4 * number_of_drops_in_circle / number_of_drops))
     plt.savefig("%s_drops.%s" % (number_of_drops, format))
+    plt.close()
 
 
 def rain(number_of_drops=1000, length_of_field=1, plot=True, format='pdf', dynamic=False):
