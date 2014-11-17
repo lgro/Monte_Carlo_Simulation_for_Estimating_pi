@@ -27,7 +27,7 @@ def plot_rain_drops(drops_in_circle, drops_out_of_circle, length_of_field=1, for
     number_of_drops_in_circle = len(drops_in_circle)
     number_of_drops_out_of_circle = len(drops_out_of_circle)
     number_of_drops = number_of_drops_in_circle + number_of_drops_out_of_circle
-    plt.figure()
+    fig = plt.figure(figsize=(8, 7.75), dpi=100)
     plt.xlim(-length_of_field / 2, length_of_field / 2)
     plt.ylim(-length_of_field / 2, length_of_field / 2)
     plt.scatter([e[0] for e in drops_in_circle], [e[1] for e in drops_in_circle], color='blue', label="Drops in circle")
